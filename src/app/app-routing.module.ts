@@ -8,6 +8,8 @@ import { OrderComponent } from './order/order.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Browser } from 'selenium-webdriver';
 import { BrowserModule } from '@angular/platform-browser';
+import { LoginComponent } from './login/login.component';
+import { DisplayComponent } from './display/display.component';
 
 
 const routes: Routes = [
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path:'product',component:ProductComponent},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
-  {path:'order',component:OrderComponent}
+  {path:'order',component:OrderComponent},
+  {path:'login',component:LoginComponent},
+  {path:'display',component:DisplayComponent}
 ];
 
 @NgModule({

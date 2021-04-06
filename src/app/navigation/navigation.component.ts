@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faHome,faCouch,faPhone,faAddressCard, faSortAmountUpAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHome,faCouch,faPhone,faAddressCard, faSortAmountUpAlt, faSignInAlt, faSign,faUsers } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navigation',
@@ -12,6 +12,8 @@ export class NavigationComponent implements OnInit {
   faPhone =faPhone;
 faAddressCard= faAddressCard;
 faSortAmountUpAlt = faSortAmountUpAlt;
+faSignInAlt = faSignInAlt;
+faUsers = faUsers;
 
   constructor() { }
 

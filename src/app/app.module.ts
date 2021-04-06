@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -10,6 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { OrderComponent } from './order/order.component';
+import { LoginComponent } from './login/login.component';
+import { AuthService } from './services/auth.service';
+import { DisplayComponent } from './display/display.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -19,14 +23,18 @@ import { OrderComponent } from './order/order.component';
     ContactComponent,
     HomeComponent,
     ProductComponent,
-    OrderComponent
+    OrderComponent,
+    LoginComponent,
+    DisplayComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
